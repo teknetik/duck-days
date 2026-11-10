@@ -1,5 +1,7 @@
 # Duck Days
 
+https://github.com/user-attachments/assets/09a6fd61-4a1c-4f3c-9a48-cf5b8d1dda78
+
 A small nature documentary you can play. You are a mallard on a woodland pond in
 late-afternoon light: paddle through the lily cove, drift under the willow, then
 hold Space and slip under the surface into a different world of pondweed, fish
