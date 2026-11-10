@@ -1,0 +1,94 @@
+{
+  "model": "eleven_text_to_sound_v2",
+  "outputFormat": "mp3_44100_128",
+  "clips": [
+    {
+      "id": "birdsongA",
+      "file": "ambience/birdsong-a.mp3",
+      "seconds": 22,
+      "loop": true,
+      "influence": 0.45,
+      "prompt": "Late afternoon birdsong in an English broadleaf woodland beside a still pond: a blackbird singing fluting phrases, a robin, a chiffchaff, a distant wood pigeon cooing. Calm, sparse and natural with gaps between calls, light open air, mid-distance. No wind noise, no water, no insects, no people, no music. Seamless loop."
+    },
+    {
+      "id": "birdsongB",
+      "file": "ambience/birdsong-b.mp3",
+      "seconds": 16,
+      "loop": true,
+      "influence": 0.45,
+      "prompt": "Quiet woodland edge ambience with distant songbirds: a wren trilling far away, a great tit's two-note call, occasional soft chirps. Very sparse and gentle, far perspective, light air. No wind noise, no water, no people, no music. Seamless loop."
+    },
+    {
+      "id": "reeds",
+      "file": "ambience/reeds.mp3",
+      "seconds": 10,
+      "loop": true,
+      "influence": 0.5,
+      "prompt": "Dry reeds and tall grasses rustling softly in a light breeze at the edge of a pond, close perspective, continuous gentle swishing. No birds, no water splashes, no music. Seamless loop."
+    },
+    {
+      "id": "lapping",
+      "file": "ambience/lapping.mp3",
+      "seconds": 10,
+      "loop": true,
+      "influence": 0.5,
+      "prompt": "Very gentle pond water lapping against a muddy bank and reed stems, small soft ripples, quiet and close. No birds, no wind, no splashing, no music. Seamless loop."
+    },
+    {
+      "id": "underwater",
+      "file": "ambience/underwater.mp3",
+      "seconds": 12,
+      "loop": true,
+      "influence": 0.5,
+      "prompt": "Underwater ambience in a still freshwater pond: muffled low rumble and soft pressure hum, occasional tiny bubbles rising, calm and dark. No music, no voices. Seamless loop."
+    },
+    {
+      "id": "quackA",
+      "file": "sfx/quack-a.mp3",
+      "seconds": 2.2,
+      "loop": false,
+      "influence": 0.7,
+      "prompt": "A single male mallard duck quacking three times, close microphone on a quiet pond, clear natural quacks getting quieter. No other birds, no water, no music."
+    },
+    {
+      "id": "quackB",
+      "file": "sfx/quack-b.mp3",
+      "seconds": 1.5,
+      "loop": false,
+      "influence": 0.7,
+      "prompt": "A mallard duck gives two short quacks, close and clear, natural field recording. No other sounds, no music."
+    },
+    {
+      "id": "paddle",
+      "file": "sfx/paddle.mp3",
+      "seconds": 5,
+      "loop": false,
+      "influence": 0.6,
+      "prompt": "A duck's webbed feet paddling gently in calm water: a slow series of separate soft water strokes with clear pauses between them, close and quiet. No birds, no splashing, no music."
+    },
+    {
+      "id": "splashDive",
+      "file": "sfx/splash-dive.mp3",
+      "seconds": 1.8,
+      "loop": false,
+      "influence": 0.65,
+      "prompt": "A small duck diving under calm pond water: one quick soft plunge with a short gulp and a few bubbles, close perspective, natural. No birds, no music."
+    },
+    {
+      "id": "splashSurface",
+      "file": "sfx/splash-surface.mp3",
+      "seconds": 2,
+      "loop": false,
+      "influence": 0.65,
+      "prompt": "A duck popping back up through the surface of a calm pond: a light splash, water running off feathers and a few drips, close perspective, natural. No birds, no music."
+    },
+    {
+      "id": "bubbles",
+      "file": "sfx/bubbles.mp3",
+      "seconds": 2.5,
+      "loop": false,
+      "influence": 0.6,
+      "prompt": "A stream of small air bubbles rising underwater in a pond, soft muffled burbling, close. No music."
+    }
+  ]
+}

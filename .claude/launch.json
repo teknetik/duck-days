@@ -1,0 +1,41 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "duck-days-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "5273",
+        "--strictPort"
+      ],
+      "port": 5273
+    },
+    {
+      "name": "duck-days-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "preview",
+        "--",
+        "--port",
+        "4273",
+        "--strictPort"
+      ],
+      "port": 4273
+    },
+    {
+      "name": "trailer-receiver",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "tools/trailer/receiver.mjs",
+        ".trailer-work",
+        "4391"
+      ],
+      "port": 4391
+    }
+  ]
+}

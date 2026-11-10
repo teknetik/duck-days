@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1d2a1c" />
+    <meta name="description" content="Duck Days: paddle, dive and quack your way around a woodland pond as a mallard." />
+    <title>Duck Days</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%232f5d43'/%3E%3Cpath d='M14 38c0-9 8-14 18-14 3 0 5-1 6-4 1-5 5-8 9-8 5 0 8 4 8 8l6 2-6 3c-1 4-4 6-6 7 0 8-7 14-17 14-10 0-18-3-18-8z' fill='%23f4efe1'/%3E%3Ccircle cx='47' cy='20' r='2' fill='%231d2a1c'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene" aria-label="Duck Days: a mallard on a woodland pond"></canvas>
+
+      <div id="tint" aria-hidden="true"></div>
+
+      <div id="hud">
+        <header id="title" class="fade">
+          <p class="eyebrow">A small nature documentary</p>
+          <h1>Duck Days</h1>
+        </header>
+
+        <div id="caption" class="fade hidden" role="status" aria-live="polite">
+          <span class="caption-title"></span>
+          <span class="caption-sub"></span>
+        </div>
+
+        <div id="hint" class="fade" aria-label="Controls">
+          <span class="hint-item"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> swim</span>
+          <span class="hint-item"><kbd class="wide">Space</kbd> hold to dive</span>
+          <span class="hint-item"><kbd class="wide">Drag</kbd> look</span>
+          <span class="hint-item"><kbd>Q</kbd> quack</span>
+        </div>
+
+        <nav id="tools" aria-label="Game options">
+          <button id="mute" class="tool" type="button" aria-pressed="false" aria-label="Mute sound" title="Mute (M)">
+            <svg class="icon icon-on" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z" />
+              <path class="stroke" d="M15.2 9.2a4 4 0 0 1 0 5.6M17.6 6.8a7.4 7.4 0 0 1 0 10.4" />
+            </svg>
+            <svg class="icon icon-off" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z" />
+              <path class="stroke" d="M15.5 9.5l5 5M20.5 9.5l-5 5" />
+            </svg>
+          </button>
+          <button id="settings" class="tool" type="button" aria-expanded="false" aria-controls="panel" aria-label="Quality settings" title="Quality">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path class="stroke" d="M5 7h9M18 7h1M5 12h2M11 12h8M5 17h7M16 17h3" />
+              <circle class="stroke" cx="16" cy="7" r="2" />
+              <circle class="stroke" cx="9" cy="12" r="2" />
+              <circle class="stroke" cx="14" cy="17" r="2" />
+            </svg>
+          </button>
+          <div id="panel" class="hidden" role="group" aria-label="Quality">
+            <p class="panel-label">Quality</p>
+            <div class="segments">
+              <button type="button" data-quality="low" aria-pressed="false">Low</button>
+              <button type="button" data-quality="medium" aria-pressed="false">Medium</button>
+              <button type="button" data-quality="high" aria-pressed="false">High</button>
+            </div>
+            <p class="panel-note">Water detail, shadows and foliage.</p>
+          </div>
+        </nav>
+
+        <div id="touch" class="hidden" aria-hidden="true">
+          <div id="stick"><div id="stick-knob"></div></div>
+          <div id="touch-buttons">
+            <button id="touch-quack" class="touch-button" type="button">Quack</button>
+            <button id="touch-dive" class="touch-button primary" type="button">Dive</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="loading" role="status">
+        <p>Filling the pond…</p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
