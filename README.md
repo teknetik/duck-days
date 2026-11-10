@@ -2,6 +2,9 @@
 
 https://github.com/user-attachments/assets/09a6fd61-4a1c-4f3c-9a48-cf5b8d1dda78
 
+**[Play it in your browser](https://teknetik.github.io/duck-days/)** — no install;
+needs WebGL 2 (any current desktop browser).
+
 A small nature documentary you can play. You are a mallard on a woodland pond in
 late-afternoon light: paddle through the lily cove, drift under the willow, then
 hold Space and slip under the surface into a different world of pondweed, fish
@@ -26,7 +29,9 @@ npm run preview    # serve the production build (http://localhost:4173)
 ```
 
 `npm run typecheck` runs TypeScript on its own. The build uses a relative base
-path, so `dist/` can be dropped on any static host or sub-folder.
+path, so `dist/` can be dropped on any static host or sub-folder. Every push to
+`main` rebuilds and publishes it to GitHub Pages
+(`.github/workflows/pages.yml`).
 
 Needs a browser with WebGL 2 and float render targets (any current Chrome, Edge,
 Firefox or Safari).
